@@ -1,0 +1,63 @@
+public static void loadData(ArrayList<PoliceOfficer> po, ArrayList<ParkingMeter> pm, ArrayList<ParkedCar> pc) {
+         
+        po.add(new PoliceOfficer("Joe", "PO123"));
+        po.add(new PoliceOfficer("Mike", "PO866"));
+        po.add(new PoliceOfficer("Suzie", "PO956"));
+        po.add(new PoliceOfficer("Sam", "PO812"));
+        
+        pm.add(new ParkingMeter(90,"PM1"));
+        pm.add(new ParkingMeter(60,"PM2"));
+        pm.add(new ParkingMeter(30,"PM3"));
+        pm.add(new ParkingMeter(10,"PM4"));
+        pm.add(new ParkingMeter(90,"PM5"));
+        pm.add(new ParkingMeter(60,"PM6"));
+        
+        pc.add(new ParkedCar("VW", "N34234",60,pm.get(0)));
+        pc.add(new ParkedCar("Mazda", "234-567",70,pm.get(1)));
+        pc.add(new ParkedCar("Subaru", "HelloKitty",45,pm.get(2)));
+        pc.add(new ParkedCar("Buick", "W879HY4",20,pm.get(3)));
+        pc.add(new ParkedCar("Miata", "BG65RF7",125,pm.get(4)));
+        pc.add(new ParkedCar("Corvette", "JI9987",10,pm.get(5)));
+        pc.add(new ParkedCar("Chevy", "12AS76",145,pm.get(1)));
+        pc.add(new ParkedCar("VW", "MK987",170,pm.get(2)));
+        pc.add(new ParkedCar("Dodge", "JR4534D",86,pm.get(3)));
+        pc.add(new ParkedCar("Ford", "C56FDS",60,pm.get(4)));
+        
+    }
+}
+
+
+My philosophy for the main method (you can do it differently if you like)
+
+
+public static void main(String[] args) {
+        
+        // create four ArrayLists.  One for each class
+        
+        
+        // create random number generator that will be used to decide which officer will be assigned
+                
+        // load initial data by calling my method
+        
+
+        // loop through the parked cars arraylist
+                   // select a random officer            
+                   // output parked car information
+		   // calculate the number of minutes of violation (the number of minutes for the car minus the maximum for the meter	           
+                   // if number of minutes of violation is greater than zero
+			//create a ticket
+			//report ticket
+			// and add the ticket to parking ticket arraylist 
+		  //else 
+			// output that there is no violation
+		// print out the officer that reported this check
+
+	// end loop
+	
+        // output ticket summary
+        System.out.println("\nSummary of tickets:");
+        // loop through the ticket arraylist and output tickets
+        
+        }
+        
+    }
